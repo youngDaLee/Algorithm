@@ -11,7 +11,7 @@ def main():
             first_word_set = set(list(word))
             first_word_len = len(word)
         else:
-            if abs(first_word_len - len(word)) > 1 or len((first_word_set - set(list(word)))|(set(list(word))-first_word_set)) > 1:
+            if abs(first_word_len - len(word)) > 2 or len((first_word_set - set(list(word)))|(set(list(word))-first_word_set)) > 2:
                 # 다른 문자 2개 이상이면 continue
                 continue
             if abs(first_word_len - len(word)) == 1 and len((first_word_set - set(list(word)))|(set(list(word))-first_word_set)) == 1:
