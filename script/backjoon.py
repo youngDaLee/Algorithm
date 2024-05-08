@@ -63,6 +63,10 @@ class Backjoon:
         # 문제 디렉토리에 README.md 파일 생성
         with open(problem_dir + 'README.md', 'w') as f:
             f.write(f'# [{self.problem_id}. {self.title_raw}](https://www.acmicpc.net/problem/{self.problem_id})\n\n')
+        # 문제 디렉토리에 python 파일 생성
+        with open(problem_dir + self.problem_id + '.py', 'w') as f:
+            f.write('')
+
 
     def run(self, problem_id):
         self.get_problem_info(problem_id)
